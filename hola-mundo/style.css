@@ -104,3 +104,24 @@ button {
 button:hover {
     background-color: #005a9c; /* El azul más oscuro */
 }
+
+/* --- Estilos de la Sección Multimedia --- */
+
+.seccion-medios {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+/* ¡TRUCO DE CSS ESENCIAL!
+   Esto hace que las imágenes y los iframes 
+   nunca sean más anchos que su contenedor 
+   y se escalen automáticamente.
+*/
+img, 
+iframe,
+video {
+    max-width: 100%; /* El ancho máximo es el 100% del contenedor */
+    height: auto;    /* La altura se ajusta automáticamente para mantener la proporción */
+}
