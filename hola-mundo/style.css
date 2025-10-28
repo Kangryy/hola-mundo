@@ -38,3 +38,25 @@ ul {
     list-style-type: disc;
     padding-left: 20px;
 }
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    text-decoration: none;
+}
