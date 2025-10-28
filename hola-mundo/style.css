@@ -60,3 +60,47 @@ nav a:hover {
     border-radius: 5px;
     text-decoration: none;
 }
+
+/* --- Estilos del Formulario de Contacto --- */
+.seccion-contacto {
+    background-color: #fdfdfd;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.form-grupo {
+    margin-bottom: 15px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+    color:#585858
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    width: 100%;             /* ¡Clave! Hace que ocupen todo el ancho disponible */
+    padding: 10px;           /* Relleno interno para que se vean "altos" */
+    border: 1px solid #ccc;  /* Un borde sutil */
+    border-radius: 5px;      /* Bordes redondeados */
+    box-sizing: border-box;  /* Una propiedad mágica que soluciona problemas de ancho */
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #0077cc; /* El azul que nos gusta */
+    color: white;              /* Texto blanco */
+    padding: 8px 20px;        /* Relleno generoso */
+    border: none;              /* Sin borde */
+    border-radius: 5px;
+    cursor: pointer;           /* Muestra la "manito" al pasar el mouse */
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005a9c; /* El azul más oscuro */
+}
