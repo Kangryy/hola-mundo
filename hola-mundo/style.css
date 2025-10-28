@@ -1,0 +1,12 @@
+body {
+    background-color: #f0f8ff; /* Un color de fondo suave y agradable */    
+}
+h1 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #0077cc; /* Un color azul bonito para tu título principal */
+}
+
+p {
+    font-family: Arial, sans-serif;
+    color: #5800af;
+}
