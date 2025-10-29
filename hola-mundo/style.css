@@ -151,3 +151,10 @@ th {
 tbody tr:nth-child(odd) {
     background-color: #f9f9f9;    
 }
+
+/* --- Estilos de Elementos en Línea --- */
+
+.highlight-text {
+    color: #0077cc;
+    font-weight: bold;
+}
