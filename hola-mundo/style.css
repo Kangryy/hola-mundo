@@ -125,3 +125,29 @@ video {
     max-width: 100%; /* El ancho máximo es el 100% del contenedor */
     height: auto;    /* La altura se ajusta automáticamente para mantener la proporción */
 }
+
+/* --- Estilos de la Tabla de Proyectos --- */
+
+table {
+    width: 100%;                  /* Hace que la tabla ocupe todo el ancho del contenedor */
+    border-collapse: collapse;    /* Fusiona los bordes de las celdas en uno solo */
+    margin-top: 15px;
+}
+
+/* Estilo para TODAS las celdas (th y td) */
+th, td {
+    border: 1px solid #ddd;       /* Un borde gris claro para cada celda */
+    padding: 12px;                /* Relleno interno */
+    text-align: left;             /* Alinea el texto a la izquierda */
+}
+
+/* Estilo solo para los encabezados (th) */
+th {
+    background-color: #f2f2f2;    /* Un fondo gris claro para la fila de encabezado */
+    color: #333;
+}
+
+/* Estilo para las filas impares (efecto cebra) */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;    
+}
