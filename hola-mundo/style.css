@@ -177,6 +177,20 @@ tbody tr:nth-child(odd) {
     text-transform: uppercase;
 }
 
+/* --- Estilos de SVG (Íconos) --- */
+.seccion-redes a svg {
+    width: 20px;
+    height: 20px;
+    fill: #0077cc;
+    vertical-align: middle; /* Alinea el SVG con el texto */
+    margin-right: 5px;   /* Espacio entre el ícono y el texto */
+
+}
+
+.seccion-redes a:hover svg {
+    fill: #005a9c;
+}
+
 /* --- ============================ --- */
 /* ---     ESTILOS RESPONSIVE     --- */
 /* --- ============================ --- */
