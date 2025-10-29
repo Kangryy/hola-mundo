@@ -165,7 +165,7 @@ tbody tr:nth-child(odd) {
 }
 
 .badge {
-    position: relative;
+    position: absolute;
     top: -10px;
     right: 5px;
     background-color: #ff0000;
@@ -175,4 +175,77 @@ tbody tr:nth-child(odd) {
     font-weight: bold;
     border-radius: 12px;
     text-transform: uppercase;
+}
+
+/* --- ============================ --- */
+/* ---     ESTILOS RESPONSIVE     --- */
+/* --- ============================ --- */
+
+/* 'breakpoint' para tablets y celulares (768px y menos) */
+@media (max-width: 768px) {
+    /* 1. Haz que el contenedor principal ocupe más espacio */
+    .container {
+        width: 95%; /* En lugar del 80% que tenía */
+        margin: 10px auto; /* Menos margen superior */
+    }
+
+    /* 2. ¡Arregla la barra de navegación! 
+          Flexbox por defecto es 'row' (fila).
+          ¡Lo cambiaremos a 'column' (columna)! */
+    nav {
+        flex-direction: column; /* Apila los enlaces verticalmente */
+        align-items: center;    /* Centra los enlaces (que ahora están en columna) */
+    }
+
+    /* 3. Haz que los "botones" del nav ocupen más espacio */
+    nav a {
+        margin: 5px 0; /* Margen arriba/abajo, no a los lados */
+        width: 90%;
+        text-align: center;
+    }
+
+    /* 4. Ajusta los títulos */
+    h1 {
+        font-size: 2em; /* 'em' es una unidad relativa, un poco más pequeña */
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /* 5. Haz que la tabla sea usable (opcional, pero buena idea)
+       (Este es un truco simple, hay formas más avanzadas) */
+    table, thead, tbody, th, td, tr {
+        display: block; /* Rompe la tabla y apila todo */
+    }
+
+    thead tr {
+        position: absolute; /* Oculta los encabezados originales */
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid #ccc; } /* Añade borde a cada "fila" apilada */
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%; /* Deja espacio para el "título" falso */
+    }
+
+    /* Añade el "título" de la columna antes de la celda */
+    td:before {
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+
+    /* Define qué título va en cada celda */
+    table td:nth-of-type(1):before { content: "Proyecto"; }
+    table td:nth-of-type(2):before { content: "Tecnologías"; }
+    table td:nth-of-type(3):before { content: "Estado"; }
+
 }
